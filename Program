@@ -1,0 +1,37 @@
+#include <Servo.h>
+Servo servo;
+int angle = 10;
+
+int ledPin =  13;
+int buzzerPin = 12;
+int ledState = LOW; 
+unsigned long previousMillis = 0;
+long OnTime = 250;        
+long OffTime = 750;   
+
+void setup() {
+  // set the digital pin as output:
+  pinMode(ledPin, OUTPUT);   
+  pinMode(buzzerPin, OUTPUT);
+  servo.attach(11);   
+}
+
+void loop(){
+  unsigned long currentMillis = millis();
+ 
+  if((ledState == HIGH) && (currentMillis - previousMillis >= OnTime)){
+    ledState = LOW; 
+    previousMillis = currentMillis; 
+    for(angle = 180; angle > 10; angle--) {
+      servo.write(angle);
+      noTone(buzzerPin);
+      digitalWrite(ledPin, ledState); 
+    }
+  }
+  else if((ledState == LOW) && (currentMillis - previousMillis >= OffTime)){
+    ledState = HIGH;  
+    previousMillis = currentMillis; 
+    for(angle = 10; angle < 180; angle++) {
+      servo.write(angle);
+      tone(buzzerPin, 1000);
+      digitalWrite(ledPin, ledState);   
