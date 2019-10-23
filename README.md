@@ -35,4 +35,4 @@ https://www.lucidchart.com/invitations/accept/4bbc663d-fde5-4b1d-9272-a4fd8d639f
 
 
 ## Minor Project
-For my creative response, Zainab, Oanh and I decided to collaborate on a minor project. We created three different components - I created a piezo buzzer changing the frequency and placing it onto one breadboard and one arduino. Oanh used a 3mm LED light and 
+For my creative response, Zainab, Oanh and I decided to collaborate on a minor project. We created three different components - I created a piezo buzzer changing the frequency and placing it onto one breadboard and one arduino. Oanh created the LED part by using a 3mm LED light, a breadboard and an arduino, whilst Zainab created the servo motor using a servo motor, breadboard and an arduino.
