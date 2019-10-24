@@ -37,8 +37,3 @@ I was tasked to create the piezo buzzer which would become the alarm sound in th
 Zainab was tasked to create the servo motor which could become the mechanic that would open and close the doors. She used a tutorial online and had slightly changed the code by changing the angle of the motor and changing how regular the servo would turn on. The servo motor component was created with a servo motor, breadboard, an arduino and wires. The servo motor was the easiest to create as the tutorial was self explanatory and we had no inconveniences. Oanh was tasked to create the LED section of our “prison”. At first, we decided to use an RGB LED as it had more colour variety, but we changed on the 3mm red LED as we wanted the light to be bright and one colour. She used the “Blink” example code we had previously used and changed the code slightly to create a “circling” pattern to mimic a prison. The LED component was created with a 3mm red LED, a breadboard, an arduino and wires.
 
  By combining these, we have our final product. During our project, we had three designs. The first design was by simply combining them and trying to match the servo motor, LED and buzzer to be in sync. The second design was the same as the previous but an addition of a button so we could change if the project was turned on or off. In the last and final design, we removed the button and used the milliseconds() function to turn off all machines simultaneously. (As shown in our flowchart).
-
-- Write how you change from python to arduino
-- Conditions , Iterations, Functions, Objects
-- Write about for loops for buzzer
-
